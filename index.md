@@ -598,6 +598,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
 
+<!--
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
 
@@ -695,6 +696,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     Instructors will provide a workaround for it if needed.</strong></p>
 </div> {% comment %} End of 'SQLite' section. {% endcomment %}
 
+
 <div id="openrefine"> {% comment %} Start of 'OpenRefine' section. {% endcomment %}
   <h3>OpenRefine</h3>
   <p>
@@ -767,3 +769,4 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   </ol>
 </div>
 {% endcomment %}
+-->
