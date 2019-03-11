@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>2019-03-08-UCSF-Python</title>
+<meta name="generator" content="Etherpad">
+<meta name="author" content="Etherpad">
+<meta name="changedby" content="Etherpad">
+<meta charset="utf-8">
+<style>
+* {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+}
+ul.indent {
+  list-style-type: none;
+}
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+body > ol {
+  counter-reset: first second third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth thirteenth fourteenth fifteenth sixteenth;
+}
+ol > li:before {
+  content: counter(first) ". ";
+  counter-increment: first;
+}
+ol > ol > li:before {
+  content: counter(first) "." counter(second) ". ";
+  counter-increment: second;
+}
+ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) ". ";
+  counter-increment: third;
+}
+ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) ". ";
+  counter-increment: fourth;
+}
+ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) ". ";
+  counter-increment: fifth;
+}
+ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) ". ";
+  counter-increment: sixth;
+}
+ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) ". ";
+  counter-increment: seventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eighth) ". ";
+  counter-increment: eighth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eighth) "." counter(ninth) ". ";
+  counter-increment: ninth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eighth) "." counter(ninth) "." counter(tenth) ". ";
+  counter-increment: tenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eighth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) ". ";
+  counter-increment: eleventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eighth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelfth) ". ";
+  counter-increment: twelfth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eighth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelfth) "." counter(thirteenth) ". ";
+  counter-increment: thirteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eighth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelfth) "." counter(thirteenth) "." counter(fourteenth) ". ";
+  counter-increment: fourteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eighth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelfth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) ". ";
+  counter-increment: fifteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eighth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelfth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) "." counter(sixteenth) ". ";
+  counter-increment: sixteenth;
+}
+ol {
+  text-indent: 0px;
+}
+ol > ol {
+  text-indent: 10px;
+}
+ol > ol > ol {
+  text-indent: 20px;
+}
+ol > ol > ol > ol {
+  text-indent: 30px;
+}
+ol > ol > ol > ol > ol {
+  text-indent: 40px;
+}
+ol > ol > ol > ol > ol > ol {
+  text-indent: 50px;
+}
+ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 60px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 70px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 80px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 90px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 100px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 110px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 120px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 130px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 140px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 150px;
+}
+
+</style>
+</head>
+<body>
+&nbsp;Welcome to The Carpentries Etherpad!<br><br>This pad is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents.<br><br>Use of this service is restricted to members of The Carpentries community; this is not for general purpose use (for that, try etherpad.wikimedia.org).<br><br>Users are expected to follow our code of conduct: <a href="https&#x3a;&#x2F;&#x2F;docs&#x2e;carpentries&#x2e;org&#x2F;topic&#x5f;folders&#x2F;policies&#x2F;code&#x2d;of&#x2d;conduct&#x2e;html">https:&#x2F;&#x2F;docs.carpentries.org&#x2F;topic_folders&#x2F;policies&#x2F;code-of-conduct.html</a><br><br>All content is publicly available under the Creative Commons Attribution License: <a href="https&#x3a;&#x2F;&#x2F;creativecommons&#x2e;org&#x2F;licenses&#x2F;by&#x2F;4&#x2e;0&#x2F;">https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by&#x2F;4.0&#x2F;</a><br><br><br>Etherpad<br><a href="https&#x3a;&#x2F;&#x2F;pad&#x2e;carpentries&#x2e;org&#x2F;2019&#x2d;03&#x2d;08&#x2d;UCSF&#x2d;Python">https:&#x2F;&#x2F;pad.carpentries.org&#x2F;2019-03-08-UCSF-Python</a><br><br>Please fill out the pre-workshop survey<br><a href="https&#x3a;&#x2F;&#x2F;www&#x2e;surveymonkey&#x2e;com&#x2F;r&#x2F;swc&#x5f;pre&#x5f;workshop&#x5f;v1&#x3f;workshop&#x5f;id&#x3d;2019&#x2d;03&#x2d;08&#x2d;UCSF&#x2d;Python">https:&#x2F;&#x2F;www.surveymonkey.com&#x2F;r&#x2F;swc_pre_workshop_v1?workshop_id=2019-03-08-UCSF-Python</a><br><br>Courses Websitec<br><a href="https&#x3a;&#x2F;&#x2F;courses&#x2e;ucsf&#x2e;edu&#x2F;course&#x2F;index&#x2e;php&#x3f;categoryid&#x3d;499">https:&#x2F;&#x2F;courses.ucsf.edu&#x2F;course&#x2F;index.php?categoryid=499</a><br><br><strong># Day 1 BASH Shell:</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;<br>Download the data-shell.zip file for the Unix section and unzip it (you can leave it in your downloads folder)<br><a href="https&#x3a;&#x2F;&#x2F;swcarpentry&#x2e;github&#x2e;io&#x2F;shell&#x2d;novice&#x2F;setup&#x2e;html">https:&#x2F;&#x2F;swcarpentry.github.io&#x2F;shell-novice&#x2F;setup.html</a><br><br>&quot;whoami&quot; unix command<br>Geoff recommended to create a separate account for &quot;system administrator&quot; as root user, then log into your own account when you are doing your usual tasks to minimize risk of messing up things<br><br>pwd = path to working directory<br><br>ls = list directory (will show contents of the pwd)<br>ls -F = distinguishes between directories and files<br>&nbsp;&nbsp;&nbsp; `-F` is a &quot;command flag&quot; which changes the behavior of the command<br>&nbsp;&nbsp;&nbsp; Also sometimes called an option<br>&nbsp;&nbsp;&nbsp; If you have a long list e.g. in Downloads, d* = list only files beginning with d<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; ls -a = how you can see everything<br>&nbsp;&nbsp;&nbsp; . = refers to where you are<br>&nbsp;&nbsp;&nbsp; .. = refers to directory above you<br>&nbsp;&nbsp;&nbsp; ~ = refers to the home directory absolute path<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; ls -l = table-like listing which shows a bunch of other information about files&#x2F;directories<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>Flags can be combined, so `ls -a -l` is a command to show ALL files in that tabular format.<br><br>cd = change directory<br>&nbsp;&nbsp;&nbsp; `cd Downloads` means change into the directory called &quot;Downloads&quot; which is a sub-directory of the pwd<br>&nbsp;&nbsp;&nbsp; cd without any argument takes you to your home directory<br>&nbsp;&nbsp;&nbsp; `cd ..` takes you to the parent of the present working directory.<br>&nbsp;&nbsp;&nbsp; e.g. `cd ..&#x2F;writing` takes you UP one directory and then back down into the writing directory.&nbsp; This is called a &quot;Relative Path&quot; because it&#x27;s relative to your present working directory.<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; Unix is a tree, branches downwards<br><br>Tab completion allows you to hit the &lt;Tab&gt; key while you&#x27;re typing a command or a directory name (or a few other things) and BASH will fill in the rest IF it&#x27;s unique&#x2F;unambiguous.<br>If your screen flashes and does not tab-complete, Unix is telling you that there are several things starting with the key you pressed. Press &lt;tab&gt; &lt;tab&gt; quickly to ask Unix for all the options - then you can pick! \<br>&lt;Up&gt;&#x2F;&lt;Down&gt; keys will move through your history and pull up previous lines<br><br>CTRL+A allows you to hit the &lt;Control&gt; key followed by &lt;A&gt; key to jump to the beginning of you current command<br><br>&nbsp;&nbsp; e.g. `cd ..&#x2F;writing` takes you UP one directory and then back down into the writing directory.&nbsp; This is called a &quot;Relative Path&quot; because it&#x27;s relative to your present working directory.<br>&nbsp;&nbsp;&nbsp;<br>Exercise #1:<br>Start in the home directory and navigate to the writing folder (subdirectory of data-shell) in three different ways:<br>&nbsp;&nbsp;&nbsp; 1) step by step, checking where you are at each step<br>&nbsp;&nbsp;&nbsp; 2) use a relative path<br>&nbsp;&nbsp;&nbsp; 3) Use and absolute path<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;<br>nano is a text editor that works on the terminal, rather than opening up a window<br><br>other text editors: vi&#x2F;vim or emacs but will need to get used to using it first<br>&nbsp;&nbsp;&nbsp;<br>cat #shows the content of a file<br><ul class="indent"><li>(short for &#8220;concatenate&#8220;) <strong>command</strong> is one of the most frequently used <strong>command</strong> in Linux&#x2F;<strong>Unix</strong> like operating systems. <strong>cat command</strong> allows us to create single or multiple files, view contain of file, concatenate files and redirect output in terminal or files</ul><br>example&nbsp;&nbsp;&nbsp;&nbsp; rm thesis.txt = rm means remove<br><br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp; rm = remove or delete (CAREFUL!&nbsp; don&#x27;t do this unless you&#x27;re SURE)<br>&nbsp;&nbsp; cp = copy<br>&nbsp;&nbsp; mv = change name , move&nbsp; (Also be careful with this; you can overwrite files without meaning to.)<br>&nbsp;&nbsp; mkdir = make directory<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp; You can just type ls Thesis - so ls and the name of the directory to see what&#x27;s in it without going into it<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;<br>Come back at 11:20, thanks!<br><br><br>How to color code your shell:&nbsp;<br>command prompt ls output color coding:&nbsp;<br>&gt; nano ~&#x2F;.bash_profile<br>add:<br><ul class="indent"><li>alias ls=&#x27;ls -G&#x27;</li><li>export CLICOLOR=1</li><li>export LSCOLORS=Gxfxcxdxbxegedabagacad</li><li>export PS1=&quot;\e[0;33m[\u@\h \W]\$ \e[m &quot;</ul><br><br><br><br>Ctrl-O for save<br>Ctrl-X for exit<br>&gt; source ~&#x2F;.bash_profile<br>&gt; ls<br><br>rm -r = remove a directory and everything inside of it (-r stands for &quot;recursive&quot;)<br><br>Finding things commands:<br>grep = global regular expressions parser (duh) (search the contents of a file for a particular phrase)<br>find = find files on your computer based on various criteria<br><br>man grep = pull up manual for how to us grep, view full documentation<br>man - manual<br>when in the manual and want to exit , hit q for Quit<br>to stop process from running and get back to command line, ctrl + c<br>grep -E &#x27;^.o&#x27; haiku.txt&nbsp; means find all instances of o as the second letter within file haiku.txt<br><br>Exercise:<br>&nbsp;&nbsp;&nbsp; Use grep to identify a word or phrase that shows up in all directories under &#x27;data-shell&#x2F;writing&#x27;<br>&nbsp;&nbsp;&nbsp; HINT: the &#x27;-l&#x27; (dash lowercase-L) flag lists the names of the files without showing their contents<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>wc = word count (will give you lines, words, characters from a given file or list of files)<br>wc -l *.pdb = (dash lowercase-L) will list the number of lines in each file that ends with &quot;.pdb&quot;<br>wc -l *.pdb &gt; lengths.txt = save all of the file lengths of .pdb files to a new file named lengths.txt.<br><br><br><strong># Python Day 1</strong><br><br>$ # Close your terminals and your jupyter notebook windows<br>$ # Download the gapminder data (link on pad)<br>$ # Unzip the gapminder data on your Desktop<br>$ # Open a terminal window and navigate into that directory<br>$ # &quot;~&#x2F;Desktop&#x2F;data&#x2F;&quot;<br><br><a href="https&#x3a;&#x2F;&#x2F;swcarpentry&#x2e;github&#x2e;io&#x2F;python&#x2d;novice&#x2d;gapminder&#x2F;files&#x2F;python&#x2d;novice&#x2d;gapminder&#x2d;data&#x2e;zip">https:&#x2F;&#x2F;swcarpentry.github.io&#x2F;python-novice-gapminder&#x2F;files&#x2F;python-novice-gapminder-data.zip</a><br><br>If you can&#x27;t run the code on a line in jupyter notebook, you may have accidentally set the cell type to something other than &quot;code&quot;<br>To fix this, go to Cell-&gt;Cell Type-&gt;Code<br><br>variable names can&#x27;t have spaces. use an underscore or dash (underscores are a more common convention, but either will work)<br><br>when naming variables, underscores, spacing, and capitalization matters<br>ie: my name is not the same as My_Name or my_name ; python would bounce back you have a syntax error or some other error to check your variable name<br><br>naming conventions:<br>&nbsp;&nbsp;&nbsp; my.name will not work in python. periods mean something different<br>&nbsp;&nbsp;&nbsp; try to start with a letter, no dashes, no spaces, ok to combine with number<br><br>You can enter more than one line of code in a cell in a jupyter notebook<br><br>python reads code in a series top down<br><br>when coding, try to explicitly describe what it should do, then see the result, you want to predict that result first, think of how to test that the code is actually doing what you want it to<br><br>to see the variables you can use<br>dir()<br>whos will list the variables: name, type, and value (you can use %whos - the % means it is an ipython or jupyter notebook shortcut, may not be avialable in all python code)<br><br>variables in python have a specific type: integer, string (text), float, boolean (lots of others)<br>a &quot;type error&quot; happens when you try to do an operation on data types that isn&#x27;t available in python (like adding an integer with a string)<br><br>running python code &quot;Some text&quot; + &quot;Some other text&quot; would concatonate text in quotes together<br><br>if variable is an integer but you want to change it to a string, use function str()<br>To change a string to an int, use int()<br>note that the string must make sense as an int! int(&quot;100&quot;) works, int(&quot;one hundred&quot;) doesn&#x27;t<br><br>print(a, b) will put a space between a and b. it&#x27;s equivalent to print(a + &quot; &quot; + b).<br><br>python is zero indexed .... when you create a list, python considers the first item as zero<br>This varies language to language - R, for example, indexes at &quot;1&quot; rather than &quot;0&quot;<br><br>use del to delete a variable or an element of a list by index<br>del my_var deletes the variable<br>del my_list[5] deletes the item at index 5 in a list<br>-1 access the last element of a list: my_list[-1] will get the last element&nbsp;<br><br>You can multiply a list by an integer n, and get n copies of that list<br>[&#x27;Carl&#x27;] * 3 will generate [&#x27;Carl&#x27;, &#x27;Carl&#x27;, &#x27;Carl&#x27;]<br><br>Anyone who is interested can later read about &quot;<em>Parhyale hawaiensis, </em>a marine amphipod crustacean&quot; - both hard to pronounce, and hard to spell! (: ~ Rebecca<br><br>With a single line of python code, write a line that will print the first character in the last list item:<br>&nbsp;&nbsp;&nbsp; One solve is:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; challenge_list[-1][0]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If we know the length of challenge_list, we could also specify the last item that way.<br><br><br>Codes in python we can reuse = libraries, packages, modules etc<br><ul class="indent"><li>bring in these using command &quot;import&quot;</li><li>these can be found in references or google, if you want to read more about its documentation, can google example for math, visit: <a href="https&#x3a;&#x2F;&#x2F;docs&#x2e;python&#x2e;org&#x2F;3&#x2F;library&#x2F;math&#x2e;html">https:&#x2F;&#x2F;docs.python.org&#x2F;3&#x2F;library&#x2F;math.html</a> or use command help</ul>As a jupyter shortcut, use ? followed by the library&#x2F;method. ?math.log will print information about the method, input parameters, output<br>dir(math) will show the function names available on the math library<br><br>when citing python in scientific paper, remember cite version #, what library, what third party, and ultimately you can share your code<br><br>libraries helpful for tabular data:<br>&nbsp;&nbsp;&nbsp; pandas, conventionally shorten as pd<br>&nbsp;&nbsp;&nbsp; matplotlib.plyplot and Byron likes to shorten as plt<br>&nbsp;&nbsp;&nbsp; seaborn and Byron likes to shorten as sns<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>You can view csv and other text files in Jupyter Notebook (click on the file name in your notebook &quot;Home&quot; window). Keep in mind, this will load the whole file, so be careful about opening very large files. In that case, you&#x27;re better off using unix and using the head utility to view the first few lines<br><br>data.loc[0] will give the first row of the dataframe while data.loc[0:2] will give row 0 and row 1<br><br>plt.xticks(rotation=90) will rotate the labels<br><br><strong># Day 2&nbsp;</strong><br><br>Continuing with Python<br><br>Github<br><ul class="indent"><li>how to configure username:<ul class="indent"><li></li><li>git config --global user.name &quot;whatever your name is&quot;</ul><li></li><li>how to configure email:<ul class="indent"><li></li><li>git config --global user.email &quot;insert email here&quot;</li><li>note: this email will be seen publicly seen on web, and needs to match the email you used to sign up for github</li><li></li><li>how github interacts with your local version:<ul class="indent"><li>local &lt;--&gt; git &lt;--&gt; github</li><li>&nbsp;&nbsp;&nbsp; --&gt;add</li><li>&nbsp;&nbsp;&nbsp; --&gt;commit<ul class="indent"><li><ul class="indent"><li><ul class="indent"><li><ul class="indent"><li>-&gt; push</li><li></ul></li></ul></li></ul></li></ul></li></ul></li></ul><li>workflow:<ul class="indent"><li>nano ________(whatever file you are using)___</li><li>edit it</li><li>git add (name of file)</li><li>git commit -m &quot;brief note of change&quot;</li><li>git push origin master</li><li></li><li>git status --&gt; use this to check status throughout workflow process</li><li></ul><li>how to bring in changes from remote file to local file<ul class="indent"><li>git pull origin master</li><li></ul><li>how to fix merge errors between local and remote versions<ul class="indent"><li>1. git add (file name)</li><li>2. git commit -m &quot;insert comment about change&quot;</li><li>3. git push origin master, reading error message can help you troubleshoot</li><li>4. open file in nano to see what has changed, resolve conflict</li><li>5. try again</ul></li></ul><br><ul class="indent"><li>.gitignore : use if you dont want to push a massive data file, config, use for things you want to keep out of the repository because it doesn&#x27;t belong there</li><li></ul>** in terminal, type history to see all the commands you wrote thus far<br><br>python sanwich demo: <a href="https&#x3a;&#x2F;&#x2F;github&#x2e;com&#x2F;jgu1&#x2F;python&#x5f;sandwich">https:&#x2F;&#x2F;github.com&#x2F;jgu1&#x2F;python_sandwich</a><br><br>What to do next? A few students asked me how I went on to teach myself R and Python after having attended a SWC workshop - here are some suggestions: <a href="https&#x3a;&#x2F;&#x2F;docdro&#x2e;id&#x2F;OqryuuT">https:&#x2F;&#x2F;docdro.id&#x2F;OqryuuT</a><br>The PDF books referenced in that file aren&#x27;t included, but feel free to reach out to me via email (rebecca.jaszczak@ucsf.edu) and I can help.<br>
+</body>
+</html>
